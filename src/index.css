@@ -1,4 +1,28 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.base-btn {
+  @apply border border-gray-300 text-white font-bold py-1 px-2 rounded mx-1;
+}
+
+.rgst-btn {
+  @apply base-btn bg-blue-500 hover:bg-blue-700;
+}
+
+.edt-btn {
+  @apply base-btn bg-green-300 hover:bg-green-400;
+}
+
+.dlt-btn {
+  @apply base-btn bg-red-300 hover:bg-red-400;
+}
+
+.input {
+  @apply border-2 border-gray-300 rounded-lg p-2 mx-2
+}
+
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +34,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
